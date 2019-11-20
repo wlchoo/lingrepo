@@ -6,7 +6,7 @@
       name: ansible
       description: ansible admin
       state: present
-  -name: Create user
+  - name: Create user
     win_user:
       name: ansible
       password: ansible
