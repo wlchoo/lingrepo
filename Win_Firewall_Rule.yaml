@@ -15,3 +15,4 @@
     url: ec2-54-169-25-115.ap-southeast-1.compute.amazonaws.com
     return_content: yes
     return_code: 200
+  delegate_to: localhost
