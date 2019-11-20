@@ -1,0 +1,11 @@
+---
+- name: Change file ownership and give full control
+  hosts: all
+  tasks:
+  - name: Create a file ownership
+    win_acl:
+      path: C:\Temp\test.conf
+      user: user_train
+      rights: FullControl
+      type: allow
+      state: present
