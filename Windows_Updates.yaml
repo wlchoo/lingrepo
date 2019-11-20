@@ -1,0 +1,14 @@
+---
+- name: Installing windows updates
+  hosts: all
+  tasks:
+  - name: Updating windows
+    win_updates:
+      category_name:
+      - Updates
+      - CriticalUpdates
+      - SecurityUpdates
+      - Guidance
+      - DeveloperKits
+      state: installed
+  
