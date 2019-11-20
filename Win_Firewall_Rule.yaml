@@ -18,6 +18,6 @@
       status_code: 200
     delegate_to: localhost
     register: out
-- name: Printing the output
-  debug:
-    var: out
+  - name: Printing the output
+    debug:
+      var: out
