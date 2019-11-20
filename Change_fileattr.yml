@@ -2,6 +2,10 @@
 - name: Change file ownership and give full control
   hosts: all
   tasks:
+  - name: Change owner
+    win_owner:
+      path: C:\Temp\test.conf
+      user: user_train
   - name: Create a file ownership
     win_acl:
       path: C:\Temp\test.conf
