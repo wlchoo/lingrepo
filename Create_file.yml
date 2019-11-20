@@ -1,5 +1,5 @@
 ---
-- name: all
+- name: Creating a file
   hosts: all
   tasks:
   - name: Create a file or modify timestamp if already present
