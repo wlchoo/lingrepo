@@ -17,5 +17,5 @@
       ansible_facts['distribution'] == "Microsoft Windows Server 2016 Core"
       ansible_facts['architecture'] == "64-bit"
       ansible_facts['date_time'][date] == "2019-11-21"
-      ansible_facts['date+time'][month] == 11
+      ansible_facts['date_time'][month] == 11
       ansible_distribution_major_version == 10
