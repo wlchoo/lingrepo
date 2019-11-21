@@ -1,5 +1,5 @@
 ---
-- names: Simple Boolean Task Demo
+- name: Simple Boolean Task Demo
   hosts: all
   vars:
     run_my_task: true
