@@ -1,5 +1,6 @@
 ---
 - name: Create user and group
+  hosts: all
   tasks: 
   - name: Create group
     win_group:
@@ -11,6 +12,5 @@
       name: ansible
       password: ansible
       state: present
-      groups:
-        - ansible
-  
+      group: ansible
+...  
