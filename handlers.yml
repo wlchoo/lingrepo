@@ -2,9 +2,9 @@
 - name: Testing Handlers
   hosts: all
   tasks:
-  - name: Install winrar
+  - name: Install 7zip
     win_chocolatey:
-      name: winrar
+      name: 7zip
       state: present
     notify:
       - reboot server
@@ -12,7 +12,6 @@
     debug:
       msg: failling the task as testing requires
     failed_when: true
-    ignore_errors: true
   - name: This is another task
     debug:
       msg: final task
