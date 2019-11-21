@@ -2,9 +2,9 @@
 - name: Testing Handlers
   hosts: all
   tasks:
-  - name: Install vlc
+  - name: Install winrar
     win_chocolatey:
-      name: vlc
+      name: winrar
       state: present
     notify:
       - reboot server
@@ -12,10 +12,10 @@
     debug:
       msg: failling the task as testing requires
     failed_when: true
+    ignore_errors: true
   - name: This is another task
     debug:
-      final task 
-      
+      final task
   handlers:
   - name: reboot server
     win_reboot:
