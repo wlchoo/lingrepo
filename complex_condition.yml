@@ -14,8 +14,8 @@
       loop: "{{ my_package }}"
 #    when: ansible_facts['distribution'] == "Microsift Windows Server 2016 Core" or condition == value or ansible_facts['architecture'] == "64-bit" or condition3 == value
     when:
-      ansible_facts['distribution'] == "Microsoft Windows Server 2016 Core"
-      ansible_facts['architecture'] == "64-bit"
-      ansible_facts['date_time'][date] == "2019-11-21"
-      ansible_facts['date_time'][month] == 11
-      ansible_distribution_major_version == 10
+    - ansible_facts['distribution'] == "Microsoft Windows Server 2016 Core"
+    - ansible_facts['architecture'] == "64-bit"
+    - ansible_facts['date_time'][date] == "2019-11-21"
+    - ansible_facts['date_time'][month] == 11
+    - ansible_distribution_major_version == 10
