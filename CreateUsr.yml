@@ -12,5 +12,5 @@
       name: ansible
       password: ansible
       state: present
-      groups: ansible
+      group: ansible
 ...  
