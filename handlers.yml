@@ -1,10 +1,11 @@
 ---
 - name: Testing Handlers
   hosts: all
+  force_handlers: true
   tasks:
-  - name: Install 7zip
+  - name: Install flashplayerppapi
     win_chocolatey:
-      name: 7zip
+      name: flashplayerppapi
       state: present
     notify:
       - reboot server
